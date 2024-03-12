@@ -28,5 +28,16 @@
         <input type="submit">
       </form>
     </main>
+    <script>
+      document.getElementById('formId').assEventListener('submit', e => {
+        e.preventDefault()
+
+        const text = document.getElementById('textId').value
+        const password = document.getElementBId('password').value 
+        document.getElementById('formId').innerText = "Loading..."
+        
+        console.log('hello js')
+      })
+    </script>
   </body>
 </html>
